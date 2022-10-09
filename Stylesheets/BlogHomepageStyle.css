@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css2?family=Playfair");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    background-color: green;
+    color: wheat;
+    height: 95vh;
+    font-family: "Inconsolata", Courier, monospace;
+}
+
+header {
+    background-color: darkred;
+}
+
+li {
+    padding: left 5px;
+
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+a:hover {
+    color: hotpink;
+  }
+  
+a:active {
+    color: yellow;
+  }
+
+button {
+background-color: blue;
+border: none;
+font-family: "Poppins", Courier, monospace;
+padding: 15px 32px;
+text-align: center;
+font-weight: bolder;
+text-decoration: none;
+display: inline-block;
+font-size: 1em;
+margin: 6px 2px;
+cursor: pointer;
+border-radius: 25%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: left 0.5em;
+    font-size: 1.5em;
+    margin: 4px 2px;
+    font-family: "Playfair", Courier, monospace;
+    font-weight: bolder;
+    list-style-type: none;
+}
+
+.container{
+    display: grid;
+    width: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas:
+    "mhd"
+    "gal"
+    "ct";
+}
+
+
+.mainheader{
+    grid-area: "mhd";
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 5em;
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.gallery{
+    grid-area: "gal";
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: darkred;
+    width: 300px;
+    height: 600px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.card-image {
+    background-color: blue;
+    height: 400px;
+    margin-bottom: 15px;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardOne {
+    background-image:url("/Images/provencal.jpg");
+}
+
+.cardTwo {
+    background-image: url("/Images/bolly.jpg");
+}
+
+.cardThree {
+    background-image: url("/Images/rhone.jpg");
+}
+
+.cardFour {
+    background-image: url("/Images/ridgeview.jpg");
+}
+
+.card:hover {
+    background-color: darkolivegreen;
+    color: yellow;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+
+.content{
+    grid-area: "ct";
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    flex-wrap: wrap;
+}
+
+figure {
+    float: left;
+    width: auto;
+    text-align: center;
+    font-style: bold;
+    font-size: 1em;
+    text-indent: 0;
+    border: medium wheat solid;
+    margin: 1em;
+    padding: 1em;
+  }
+
+footer{
+    background-color: darkred;
+}
+
+.navfoot{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    font-family: "Playfair", Courier, monospace;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 10px;
+}
+
